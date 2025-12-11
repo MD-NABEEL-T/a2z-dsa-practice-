@@ -1,0 +1,45 @@
+Data types in java :Total 12 = 8+4.
+
+ Primitive : 
+1, byte
+Size: 1 byte
+Range: -128 to 127
+Use: small integers, saving memory.
+
+2,short
+Size: 2 bytes
+Range: -32,768 to 32,767
+
+3,int (most used)
+Size: 4 bytes
+Range: -2,147,483,648 to 2,147,483,647
+Default for most counting operations.
+
+4,long
+Size: 8 bytes
+Use: big numbers
+Example: 12345678900L (add L)
+
+5, float
+Size: 4 bytes
+Decimal number with less precision
+Example: 3.14f (add f)
+
+6 double ⭐ (default for decimals)
+Size: 8 bytes
+Example: 3.14159
+
+7, boolean
+Values: true / false
+Used for conditions, loops.
+
+8, char
+Stores a single character
+
+Non Primitive :
+| Type                | Meaning                                             |
+| ------------------- | --------------------------------------------------- |
+| **String**          | Text (`"Hello"`)                                    |
+| **Array**           | List of same datatype (`int[] arr`)                 |
+| **Class/Object**    | User-defined types                                  |
+| **Wrapper Classes** | Integer, Double, Boolean etc. (used in collections) |
