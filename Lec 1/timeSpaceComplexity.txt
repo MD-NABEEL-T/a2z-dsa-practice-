@@ -1,0 +1,32 @@
+//alright .
+time complexity != time taken
+T.C - is the rate at which the time taken increases based on the INPUT SIZE
+Big O expression = O(4N+N)
+
+
+T.c consists of three case - 
+Best - omega,
+Average - theta ,
+Worst - O.
+Average = (best + worst )/2
+
+AVOID CONSTANTS eg:(n power 100 + 23) here constant 23 is nothing when compared to so ignore it
+AVOID LOWER VALUES , eg(4 power 15 + 3 power 10) here 3 power 10 is avoided bcoz its too small
+Remember that always compute the WORST CASE complexity of a program.
+
+
+EXAMPLE:
+for(i,n,i++){ for(j,n,j++)}
+the t.c is n power 2= n*n
+
+EXAMPLE 2:
+for (i,n,i++){for(j=0,j<=i;j++)}
+the t.c is n/2 since video 23:25 must watch
+
+
+
+Space complexity
+
+Aux space + Input Space
+
+code is sent to servers usually and most servers take 1s = 10 power 8 memory space ;
