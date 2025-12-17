@@ -8,3 +8,39 @@ public class {
         }
     }
 }
+
+🧠 Key Rule (THIS is the secret)
+
+Java allows comparison between char and int by automatically promoting char to int.
+
+But ❗ assignment is different from comparison.
+this 
+for(char ch = 'A'; ch <= 'A' + n - i - 1; ch++) {
+works without type casting 
+
+whereas this needs type casting
+
+
+also 
+1️⃣ char + char = int ❗
+System.out.println('A' + 'B');  // 131
+
+✅ To print characters:
+System.out.println("" + 'A' + 'B'); // AB
+
+2️⃣ char + int = int
+System.out.println('A' + 1);   // 66
+
+
+✅ To convert back:
+System.out.println((char)('A' + 1)); // B
+
+8️⃣ == works for char, not for String
+char a = 'A';
+char b = 'A';
+System.out.println(a == b);  // true ✅
+
+String s1 = "A";
+String s2 = "A";
+System.out.println(s1 == s2); // ⚠️ tricky
+System.out.println(s1.equals(s2)); // true ✅
