@@ -8,6 +8,15 @@ public class {
         }
     }
 }
+ALWAYS use for(i=1;i<=n) for looping variable for better understanding ok;
+BASED ON EXPERIENCE
+
+Ask only ONE question: To spot a pattern 
+
+Does it increase, decrease, or increase + decrease?
+➡️ Only increase → n rows
+➡️ Only decrease → n rows
+➡️ Increase + decrease → 2*n - 1 rows 🔥
 
 🧠 Key Rule (THIS is the secret)
 
