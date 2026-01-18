@@ -1,4 +1,4 @@
-public class pattern12{
+public class pattern13{
     public static void main(String []args){
         int n=5;
         int k=1;

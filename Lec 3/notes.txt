@@ -1,0 +1,26 @@
+| Primitive | Wrapper class |
+| --------- | ------------- |
+| int       | Integer       |
+| char      | Character     |
+| boolean   | Boolean       |
+| double    | Double        |
+| float     | Float         |
+| long      | Long          |
+| short     | Short         |
+| byte      | Byte          |
+
+Integer num;   // object
+int num;       // primitive
+👉 Same value, different form.
+
+2️⃣ Why is Integer used instead of int?
+Because:
+Integer is an object
+int is not an object
+And in custom classes / collections, Java often prefers objects.
+
+Example:
+ArrayList<int> list;      // ❌ not allowed
+ArrayList<Integer> list; // ✅ allowed
+
+So this is Collections-related, not OOPS basics.
