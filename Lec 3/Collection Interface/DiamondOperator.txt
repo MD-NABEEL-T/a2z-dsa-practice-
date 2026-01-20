@@ -1,0 +1,13 @@
+The <> in the declaration ArrayList<Integer> list = new ArrayList<>(); 
+is the diamond operator in Java
+It is syntactic sugar introduced in Java 7 to simplify the instantiation of generic classes [1, 2]. 
+
+Explanation
+Generics: The angle brackets are fundamentally used to specify that the ArrayList will hold a specific type of object—in this case, Integer objects. This provides type safety at compile time [2].
+
+Before Java 7: You would have had to write the type argument on both sides of the assignment, like this:
+java code
+ArrayList<Integer> list = new ArrayList<Integer>();
+With the diamond operator: The compiler can infer the type argument (Integer) from the left side of the assignment. This makes the code cleaner and easier to read:
+java code
+ArrayList<Integer> list = new ArrayList<>();
