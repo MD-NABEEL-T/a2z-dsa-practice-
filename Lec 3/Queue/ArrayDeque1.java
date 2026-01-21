@@ -1,5 +1,6 @@
 import java.util.*;
 //FIFO
+//⚠️ Note: ArrayDeque can also be LIFO if you use stack methods (push(), pop()).
 public class ArrayDeque1 {
     public static void main(String []args){
         ArrayDeque<Integer> ad=new ArrayDeque<>();

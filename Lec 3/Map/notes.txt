@@ -1,0 +1,8 @@
+🔥 HashMap vs TreeMap (quick lock-in)
+| Feature     | HashMap    | TreeMap        |
+| ----------- | ---------- | -------------- |
+| Dictionary? | ✅          | ✅              |
+| Order       | ❌          | ✅ (sorted)     |
+| Speed       | Fast       | Slower         |
+| Null key    | 1 allowed  | ❌              |
+| Internal DS | Hash table | Red-Black tree |
