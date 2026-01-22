@@ -1,0 +1,103 @@
+👉 Iterator is an object
+
+Not magic.
+Not a loop.
+Just a helper object whose only job is:
+
+Go through a collection one element at a time, safely.
+
+📌 Proper definition (exam-ready)
+
+Iterator is an interface in Java (java.util.Iterator) that allows sequential access to elements of a Collection and supports safe removal of elements during traversal.
+
+If you write this in exams → full marks.
+
+🤔 Why do we even need Iterator?
+
+Because Collections don’t behave like arrays.
+
+Arrays:
+arr[0], arr[1], arr[2]
+
+
+Index-based ✅
+
+Collections (Set, Queue, etc.):
+
+No index
+
+Order may change
+
+Direct access not allowed
+
+👉 Java said:
+“Fine, I’ll give you ONE universal way to move through them”
+➡️ Iterator
+
+🧩 What does an Iterator internally have?
+
+Think of it like a finger/pointer 👇
+
+[10] [20] [30] [40]
+  ^
+ (Iterator)
+
+
+It always points between elements, not on them.
+
+🛠 Methods inside Iterator (ONLY 3 — easy)
+hasNext()   // Is there a next element?
+next()      // Give me the next element
+remove()    // Remove the current element (SAFE)
+
+
+That’s it. No more.
+
+🔁 How Iterator actually works (step by step)
+Iterator<Integer> it = list.iterator();
+
+Step 1:
+
+Iterator starts before first element
+
+| 10 | 20 | 30 |
+^
+
+Step 2:
+it.hasNext();  // true
+it.next();     // returns 10
+
+
+Pointer moves forward:
+
+| 10 | 20 | 30 |
+      ^
+
+Step 3:
+it.next(); // returns 20
+
+| 10 | 20 | 30 |
+           ^
+
+🗑 Why remove() exists ONLY in Iterator
+❌ This is NOT allowed:
+for(Integer x : list) {
+    list.remove(x); // ❌ crash
+}
+
+✅ This IS allowed:
+Iterator<Integer> it = list.iterator();
+while(it.hasNext()) {
+    Integer x = it.next();
+    if(x == 20) {
+        it.remove(); // ✅ safe
+    }
+}
+
+🧠 Why?
+
+Because:
+
+Iterator knows which element was last returned
+
+It updates internal structure safely

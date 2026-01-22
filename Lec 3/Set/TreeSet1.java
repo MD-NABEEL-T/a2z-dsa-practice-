@@ -14,7 +14,9 @@ public class TreeSet1 {
         ts.add(45);
         ts.add(2);
         ts.add(5);
+        ts.add(2332);
         System.out.println(ts);
+        ts.remove(2332);
         System.out.println(ts.floor(20));   //first value  <= 20 will print.
         System.out.println(ts.ceiling(20)); //first value  >= 20 will print.
     }

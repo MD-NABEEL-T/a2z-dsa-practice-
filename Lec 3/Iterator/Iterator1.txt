@@ -1,0 +1,19 @@
+Iterator is used to traverse a collection safely and modify it (especially remove elements) without errors.
+
+1️⃣ Can Iterator be used for ANY data structure?
+❌ NO — not for everything
+✅ YES — for Java Collections
+Iterator works with:
+✔ ArrayList
+✔ LinkedList
+✔ HashSet
+✔ TreeSet
+✔ PriorityQueue
+✔ ArrayDeque
+✔ Vector
+
+Because all of these implement Collection.
+❌ Iterator does NOT work with:
+❌ Arrays (int[], String[])
+❌ Stack (legacy Stack class uses Enumeration mainly)
+❌ Custom classes (unless you implement Iterable)
