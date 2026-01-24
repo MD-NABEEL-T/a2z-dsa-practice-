@@ -11,11 +11,13 @@ public class ReverseNum {
     public static void main(String []args){
         int n=-439230;
         int result;
+        //negative like -23
         if(n<0){
             n=-1*n;
             result =reverseNumber(n);
             result=-1*result;
         }
+        //positive like 23
         else{
             result=reverseNumber(n);
         }
