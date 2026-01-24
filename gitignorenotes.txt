@@ -1,0 +1,8 @@
+🧠 Industry rule (very important)
+File	Push to GitHub?
+.env	❌ NEVER
+firebaseConfig.js (real keys)	❌ NEVER
+.env.example	✅ YES
+Backend secrets	❌ NEVER
+
+That’s EXACTLY what .gitignore is for. You’re thinking like a real dev now 👊
