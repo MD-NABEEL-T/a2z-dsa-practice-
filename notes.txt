@@ -1,5 +1,7 @@
 beqaraar song:https://youtube.com/shorts/PPlKK5YDUyU?si=oNWPWKbGuhKrRRTX
 
+
+whenever there is a division happening the TIME COMPLEXITY is O(logN)
 Leetcode Problems that can be solved :2427,1492.
 🔹 Why main is static? 🤯
 public static void main(String[] args)
