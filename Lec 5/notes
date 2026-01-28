@@ -1,1 +1,4 @@
 Stack overflow is the infinite recursion.
+
+❌ Avoid in recursion
+f(i--, n);   // confusing + dangerous
