@@ -11,9 +11,10 @@ public class Recursion6 {
     }
     public static void main(String []args){
         int n=3;
+
+        //PARAMETERIZED WAY
         my(0, n);
 
-        //pa
-        par()
+        //FUNCTIONAL WAY
     }
 }
