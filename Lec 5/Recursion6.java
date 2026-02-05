@@ -9,6 +9,13 @@ public class Recursion6 {
         i=n+i;
         my(i,n-1);
     }
+    public static int yuck(int n){
+        if(n==0)   
+        {return 0;}
+
+        return (n+yuck(n-1));
+
+    }
     public static void main(String []args){
         int n=3;
 
@@ -16,5 +23,7 @@ public class Recursion6 {
         my(0, n);
 
         //FUNCTIONAL WAY
+        int result=yuck(n);
+        System.out.println(result);
     }
 }
