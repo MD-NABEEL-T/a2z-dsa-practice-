@@ -1,3 +1,4 @@
+// Factorial number
 public class Recursion7 {
     public static int y(int n){
         if(n==0)
