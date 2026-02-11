@@ -13,3 +13,11 @@ But since it returns boolean, you must return something.
 
 Final Clear Rule
 If method return type
+
+
+String name=s.toLowerCase().replaceAll("[^a-z0-9]", "");
+// [^a-z0-9]
+
+// ^ → NOT
+// a-z → lowercase letters
+// 0-9 → digits

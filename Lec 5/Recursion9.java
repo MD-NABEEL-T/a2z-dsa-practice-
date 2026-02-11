@@ -1,7 +1,5 @@
 //CHECK STRING IS PALINDROME OR NOT.
 
-import java.lang.reflect.Method;
-
 public class Recursion9 {
     public static boolean PalindromeName(int l,int r,String name){
         if(l>=r){
