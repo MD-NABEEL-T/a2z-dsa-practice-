@@ -8,6 +8,7 @@ public class Recursion10 {
         al.add(a);
         fib(i+1,n,a+b,a,al);
     }
+
     public static void main(String[] args) {
         ArrayList<Integer> al=new ArrayList<>();
         int i=1;
